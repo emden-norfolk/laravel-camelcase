@@ -12,9 +12,11 @@ This project is **experimental**! Please raise any issues on the GitHub issue tr
 composer require emden-norfolk/laravel-camelcase
 ```
 
-## Example
+## Usage
 
-Given the following table named `ExampleTable` with the following fields:
+### Example
+
+Given the table named `ExampleTable` with the following fields:
 
  * `ExampleID` (integer, PK)
  * `FooBarBaz` (string)
@@ -41,3 +43,14 @@ $example->foo_bar_baz = 'Lorem ipsum.';
 ```
 
 This will also support mutators.
+
+### Key Transformations
+
+The following key transfomations are supported:
+
+ * `EmdenNorfolk\Eloquent\Concerns\CamelCase` --> exampleId
+ * `EmdenNorfolk\Eloquent\Concerns\UpperCamelCase` --> ExampleId
+ * `EmdenNorfolk\Eloquent\Concerns\RichCamelCase` --> exampleID
+ * `EmdenNorfolk\Eloquent\Concerns\RichUpperCamelCase` --> ExampleID
+
+One may also create their own key transformations by creating a trait based upon `trait TransformableKeys` and implementing `abstract function keyTransform`.
