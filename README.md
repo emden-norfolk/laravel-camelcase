@@ -2,6 +2,8 @@
 
 Adds support for database fields using CamelCase conventions to Eloquent models. These will be exposed as snake_case attributes.
 
+**Caveat:** Using camel case in Laravel schemas is not a good idea. This project is offered as a hack to allow developers to work with legacy database that may not follow Laravel conventions.
+
 ## Experimental
 
 This project is **experimental**! Please raise any issues on the GitHub issue tracker.
