@@ -1,0 +1,21 @@
+{
+    "name": "emden-norfolk/laravel-camelcase",
+    "description": "CamelCase attributes for Eloquent models.",
+    "type": "library",
+    "homepage": "https://github.com/emden-norfolk/laravel-camelcase",
+    "authors": [
+        {
+            "name": "Damien Bezborodov",
+            "email": "dbezborodov@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.0",
+        "laravel/framework": "^5.5",
+    },
+    "autoload": {
+        "psr-4": {
+            "EmdenNorfolk\\": "Emdnor/",
+        }
+    }
+}
